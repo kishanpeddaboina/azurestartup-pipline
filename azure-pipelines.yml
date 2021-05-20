@@ -42,10 +42,10 @@ stages:
     # List files from Build Artifact Staging Directory - After Copy
    
     # Task-3: Publish build artifacts (Publish build to Azure Pipelines)           
-    - task: PublishBuildArtifacts@1
-      inputs:
-        PathtoPublish: '$(Build.ArtifactStagingDirectory)'
-        ArtifactName: 'kube-manifests'
-        publishLocation: 'Container'
+      - task: PublishBuildArtifacts@1
+        inputs:
+          PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+          ArtifactName: 'kube-manifests'
+          publishLocation: 'Container'
     
       
