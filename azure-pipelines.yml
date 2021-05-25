@@ -21,7 +21,7 @@ stages:
       steps:
       - task: Docker@2
         inputs:
-          containerRegistry: 'kishanacr'
+          containerRegistry: 'kishanacrconnection'
           repository: 'kishanacrimage'
           command: 'buildAndPush'
           Dockerfile: '**/Dockerfile'
