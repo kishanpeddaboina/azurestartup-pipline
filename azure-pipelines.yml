@@ -22,11 +22,10 @@ stages:
       - task: Docker@2
         inputs:
           containerRegistry: 'akishanacr'
-          repository: 'customaksnginx2'
+          repository: 'kishanacrimage'
           command: 'buildAndPush'
           Dockerfile: '**/Dockerfile'
-          tags: |
-            $(tag)
+          tags: '$(tag)'
           
 ## Publish Artifacts pipeline code in addition to Build and Push          
   
