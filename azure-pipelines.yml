@@ -21,7 +21,7 @@ stages:
       steps:
       - task: Docker@2
         inputs:
-          containerRegistry: 'acrdrk'
+          containerRegistry: 'akishanacr'
           repository: 'customaksnginx2'
           command: 'buildAndPush'
           Dockerfile: '**/Dockerfile'
